@@ -1,0 +1,40 @@
+# --- MATLAB byproducts ---
+*.asv
+*.m~
+*.mex*
+*.mlapp.bak
+slprj/
+sccprj/
+codegen/
+*.autosave
+octave-workspace
+
+# --- MATLAB project files (optional: comment out if you want to track them) ---
+*.prj
+resources/
+
+# --- Data: track folder structure (.gitkeep) but not contents ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/synthetic/*
+!data/synthetic/.gitkeep
+
+# --- Results: experiment outputs are reproducible; don't commit by default ---
+# To keep a specific final result, force-add it: git add -f results/<n>
+results/*
+!results/.gitkeep
+
+# --- Reports: track .mlx but not generated HTML/PDF exports ---
+reports/*.html
+reports/*.pdf
+reports/.ipynb_checkpoints/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
